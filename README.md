@@ -10,10 +10,10 @@ The following datasets were used to create the analytics database:
 
 # Data Model
 Conceptual Data Model
-<img src="Image/Star Schema.png"/>
+
 
 # Data Pipeline
-<img src="Image/dag.png"/>
+<img src="Images/dag.png"/>
 
 ## Setup
 1. Python3 & Java 8 Required
