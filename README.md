@@ -11,6 +11,49 @@ The following datasets were used to create the analytics database:
 # Data Model
 Conceptual Data Model
 
+# 1 - Immigrations - Fact Table
+
+* `1-cicid 2-year 3-month 4-cit 5-res `
+* `6-iata 7-arrdate 8-mode 9-addr 10-depdate `
+* `11-bir 12-visa 13-coun 14-dtadfil 15-visapost `
+* `16-occup 17-entdepa 18-entdepd 19-entdepu`
+* `20-matflag 21-biryear 22-dtaddto 23-gender 24-insnum 25-airline`
+* `26-admnum 27-fltno 28-visatype`
+
+# 2 - Airports - Dimension Table
+
+* 1 - `iata_code`
+* 2 - `name` 
+* 3 - `type` 
+* 4 - `local_code` 
+* 5 - `coordinates` 
+* 6 - `city` 
+
+# 3 - Demographics - Dimension Table
+
+* 1  - `city`
+* 2  - `state` 
+* 3  - `media_age` 
+* 4  - `male_population` `
+* 5  - `female_population` 
+* 6  - `total_population` 
+* 7  - `num_veterans` 
+* 8  - `foreign_born` 
+* 9  - `average_household_size` 
+* 10 - `state_code` 
+* 11 - `race` 
+* 12 - `count` 
+
+# 4 - Temperature - Dimension Table
+
+* 1  - `timestamp`
+* 2  - `average_temperature` 
+* 3  - `average_temperatur_uncertainty` 
+* 4  - `male_population` `
+* 5  - `city` 
+* 6  - `country` 
+* 7  - `latitude` 
+* 8  - `longitude` 
 
 # Data Pipeline
 <img src="Images/dag.png"/>
